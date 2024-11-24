@@ -1,0 +1,139 @@
+/* bagian pertama */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+	box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar{
+	width: 100%;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	background-image: url(navbarbg.png);
+	background-size: cover; /* Membuat gambar memenuhi elemen */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+	justify-content: space-between;
+	font-weight: bold;
+	background-color: lightgrey;
+}
+
+.logo{
+	width: 160px;
+	margin-top: -10px;
+	cursor: pointer;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #d93923;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 100px;
+}
+
+li a:hover{
+	background: white;
+	transition: 0.5s;
+}
+
+.navbar a:hover{
+	color: #d93923;
+}
+
+/* kolom */
+
+#lname {
+    width: 700px; /* Mengatur lebar input */
+    height: 20px; /* Mengatur tinggi input */
+    font-size: 10px; /* Ukuran font untuk teks di dalam input */
+}
+
+#name {
+    width: 700px; /* Mengatur lebar input */
+    height: 20px; /* Mengatur tinggi input */
+    font-size: 10px; /* Ukuran font untuk teks di dalam input */
+}
+
+/* button submit */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 60px;
+    background: #d93923;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+    padding: 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s ease, visibility 0.4s ease;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: green;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
